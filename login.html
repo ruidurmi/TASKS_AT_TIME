@@ -1,0 +1,58 @@
+﻿
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tasks At Time</title>
+        <script src="recursos/js/jquery-ui-1.11.1.custom/external/jquery/jquery.js"></script>
+        <script src="recursos/js/jquery-ui-1.11.1.custom/jquery-ui.js"></script>
+        <link href="recursos/js/jquery-ui-1.11.1.custom/jquery-ui.css" rel="stylesheet" />
+        <link href="recursos/css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+
+
+        <header>
+            <div>
+                <img class="logo" src="recursos/images/logo.png" />
+                <h1 class="nombre">Tasks At Time</h1>
+            </div>
+
+            <nav>
+                <a id="first" href="index.html">Home</a>
+                <a href="calendario.html">Calendario</a>
+                <a href="login.html" id="last">Login</a>
+            </nav>
+        </header>
+        <div class="transparente"> 
+            <div class="content">
+                <div class="caja_login">
+                    <div class="titulo_b">
+                        <h1>BIENVENIDO</h1>
+                    </div>
+                    <div class="caja_campos">
+                        <span class="lb_login">Nombre de usuario:</span><br/>
+                        <input name="txtLogin" maxlength="50" id="txtLogin" class="usuario" type="email" placeholder="usuario" /><br/>
+
+
+
+                        <span class="lb_login">Contraseña:</span><br/>
+                        <input name="txtPassword" type="password" maxlength="50" id="txtPassword" class="contrasenia" type="password" placeholder="contraseña" /><br/>
+                    </div>
+                    <div class="">
+                        <input onClick="alert('Ya puedes acceder a tu calendario')" type="submit" name="enviar" id="bt_enviar" class="enviar" value="ENVIAR">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="#">Copyright© Gestión de tareas 2014</a>
+        </footer>
+
+        
+    </body>
+</html>

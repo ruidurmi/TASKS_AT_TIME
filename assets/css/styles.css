@@ -1,0 +1,731 @@
+body {
+    background: url(../images/fondo-madera-marron.jpg);
+    background-repeat: repeat-y;
+}
+
+header {
+    background: url(../images/fondo-madera-negro.jpg)!important;
+
+    height: 161px;
+    margin-left: -1%;
+    width: 101.2%;
+    margin-top: -2%;
+}
+
+.columna {
+    width: 12%;
+}
+
+.encabezado {
+    line-height: 45px;
+    width: 12%;
+    color: #0087CC;
+}
+
+.encabezado.last {
+    border-right: none;
+}
+
+.columnaHora {
+    width: 6%;
+    color: #0087CC;
+    font-weight: bold;
+    background-color: rgb(189, 213, 234);
+    height: 60px;
+}
+
+.encabezadoHora {
+    line-height: 45px;
+    width: 6%;
+    border-left: none;
+    color: #0099CC;
+}
+
+#Calendario {
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+    border: none;
+}
+
+table {
+    border-left: none !important;
+    border-collapse: collapse
+}
+
+td {
+    border-top: none !important;
+    border-left: none;
+    border-right:none;
+    border-bottom: 1px #A1A1A1 solid  !important;
+    box-shadow: 0px -5px 24px -2px #777 inset;
+}
+
+tr:nth-child(2n-1){
+    background-color: rgb(227, 188, 131);
+}
+
+tr {
+    border: none;
+    background-color: rgb(239, 226, 187);
+}
+
+
+
+/*-----NAV-----*/
+
+nav {
+    position: relative;
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: bold;
+    margin: 1% auto;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    top: 1px;
+    left: 3px;
+}
+
+nav a, nav a:visited {
+    border-top: 1px solid #787878;
+    border-bottom: 1px solid #787878;
+    border-left: 1px solid #787878;
+    border-right: 1px solid #787878;
+    color: rgb(231, 224, 224);
+    display: inline-block;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px -2px;
+    padding: 0.2% 12.2%;
+    text-decoration: none;
+    width: 8.8%;
+    background: #282828;
+    background: #282828;
+    background: #282828;
+    background: #282828;
+
+}
+
+nav a:hover {
+    background: #282828;
+    background: #121212;
+    background: #282828;
+    background: #282828;
+    color: #787878;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+nav a#last {
+    border-right: 1px solid #777777;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+nav a#first {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.draggable {
+    height: 12px;
+    padding: 0.5em;
+    position: relative;
+    left: 2px;
+    /* top: -1310px; */
+    border: 2px solid #363636;
+    margin-top: 4%;
+}
+
+.ui-state-highlight {
+    background: -webkit-linear-gradient(white, #c3c4c5) !important;
+}
+
+th {
+    border-left: 3px solid #000000;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    background-color: rgb(7, 47, 83);
+    box-shadow: 0px 0px 10px 10px #03083B inset;
+}
+
+
+.ui-widget-content {
+    text-align: center;
+}
+
+#t1 {
+    background: -webkit-linear-gradient(#f00e0e, #ff6b6b);
+    /* top: 56PX; */
+    position: relative;
+    width: 60px;
+    height: 12px !important;
+    /* margin: 10px 0 10px 0; */
+    cursor: pointer;
+    z-index: 999;
+    overflow: hidden;
+}
+
+#t2 {
+    background: -webkit-linear-gradient(#ff8400, #f8c996);
+    position: relative;
+    /* top: 67PX; */
+    width: 60px;
+    margin: 0px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#t3 {
+    background: -webkit-linear-gradient(#02841e, #91f4a6);
+    position: relative;
+    /* top: 79PX; */
+    width: 60px;
+    margin: 0px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+footer {
+    position: relative;
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    top: 1px;
+    left: 3px;
+    height: 48px;
+    background: #282828; 
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    border-left: 1px solid #777777;
+    border-right: 1px solid #777777;
+    color: #777777;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 38PX;
+}
+
+footer a, footer a:visited {
+    text-decoration: none;
+    color: rgb(231, 224, 224);
+    top: 15px;
+}
+
+
+.ui-widget-header {
+    background: inherit;
+    border: none;
+}
+
+.transparente {
+    background-color: rgba(202, 151, 88, 0.2);
+
+}
+
+.tarea {
+    position: relative;
+    bottom: 19px;
+}
+
+
+.logo {
+    width: 133px;
+    float: left;
+    margin-left: 38%;
+    margin-top: 1%;
+}
+
+.nombre {
+    padding-top: 4%;
+    margin-left: 43%;
+    color: white;
+}
+
+/*_____HOME_____*/
+
+/* SLIDER */
+
+#containSect{
+    height: 70em;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 118PX;
+}
+
+#sliderSect {
+    position: absolute;
+    border-radius: 5px;
+    width: 88%;
+    height: 65%;
+    background: white;
+    margin-left: 6%;
+    margin-top: 11%;
+}
+
+.slider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.anim {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+}
+
+.image1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 728px;
+}
+
+.anim1 {
+    z-index: 5;
+    animation-name: Anim1;
+    animation-duration: 21s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    animation-fill-mode: none;
+    -webkit-animation-name: Anim1;
+    -webkit-animation-duration: 21s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 4s;
+    -webkit-animation-fill-mode: none;
+    -moz-animation-name: Anim1;
+    -moz-animation-duration: 21s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: alternate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 4s;
+    -moz-animation-fill-mode: none;
+    -ms-animation-name: Anim1;
+    -ms-animation-duration: 21s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-direction: alternate;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-delay: 4s;
+    -ms-animation-fill-mode: none;
+}
+
+.anim2 {
+    z-index: 4;
+    animation-name: Anim1;
+    animation-duration: 21s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    animation-fill-mode: none;
+    -webkit-animation-name: Anim1;
+    -webkit-animation-duration: 21s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 8s;
+    -webkit-animation-fill-mode: none;
+    -moz-animation-name: Anim1;
+    -moz-animation-duration: 21s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: alternate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 8s;
+    -moz-animation-fill-mode: none;
+    -ms-animation-name: Anim1;
+    -ms-animation-duration: 21s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-direction: alternate;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-delay: 8s;
+    -ms-animation-fill-mode: none;
+}
+
+.anim3 {
+    z-index: 3;
+    animation-name: Anim1;
+    animation-duration: 21s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 12s;
+    animation-fill-mode: none;
+    -webkit-animation-name: Anim1;
+    -webkit-animation-duration: 21s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 12s;
+    -webkit-animation-fill-mode: none;
+    -moz-animation-name: Anim1;
+    -moz-animation-duration: 21s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: alternate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 12s;
+    -moz-animation-fill-mode: none;
+    -ms-animation-name: Anim1;
+    -ms-animation-duration: 21s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-direction: alternate;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-delay: 12s;
+    -ms-animation-fill-mode: none;
+}
+
+.anim4 {
+    z-index: 2;
+    animation-name: Anim1;
+    animation-duration: 21s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 16s;
+    animation-fill-mode: none;
+    -webkit-animation-name: Anim1;
+    -webkit-animation-duration: 21s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 16s;
+    -webkit-animation-fill-mode: none;
+    -moz-animation-name: Anim1;
+    -moz-animation-duration: 21s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: alternate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 16s;
+    -moz-animation-fill-mode: none;
+    -ms-animation-name: Anim1;
+    -ms-animation-duration: 21s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-direction: alternate;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-delay: 16s;
+    -ms-animation-fill-mode: none;
+}
+
+.anim5 {
+    z-index: 1;
+    animation-name: Anim1;
+    animation-duration: 21s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 20s;
+    animation-fill-mode: none;
+    -webkit-animation-name: Anim1;
+    -webkit-animation-duration: 21s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 20s;
+    -webkit-animation-fill-mode: none;
+    -moz-animation-name: Anim1;
+    -moz-animation-duration: 21s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: alternate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 20s;
+    -moz-animation-fill-mode: none;
+    -ms-animation-name: Anim1;
+    -ms-animation-duration: 21s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-direction: alternate;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-delay: 20s;
+    -ms-animation-fill-mode: none;
+}
+
+@keyframes Anim1 {
+    0% {opacity: 100;}
+    20% {opacity:   0;}
+    80% {opacity:   0;}
+    100% {opacity: 100;}
+}
+
+@-webkit-keyframes Anim1 {
+    0% {opacity: 100;}
+    20% {opacity:   0;}
+    80% {opacity:   0;}
+    100% {opacity: 100;}
+}
+
+/*login*/
+
+
+.content {
+    /* width: 90%; */
+    /* margin-left: 5%; */
+    /* text-align: center; */
+    /* position: relative; */
+}
+
+.caja_login {
+    width: 340px;
+    position: relative;
+    margin-left: 27.5%;
+    background-color: rgb(7, 47, 83);
+    border-radius: 12px;
+    height: 553px;
+    border: 2px solid #000000;
+    margin-top: 5%;
+    color: #0087CC;  
+    font-family: cursive;
+    box-shadow: 3px 3px 4px #000000;
+};
+
+
+
+.titulo_b {
+    height: 100px;
+
+    text-align: center;
+}
+
+.caja_campos {
+    margin-top: 19%;
+
+}
+
+.lb_login {
+    text-align: center;
+
+    font-size: 20px;
+}
+
+.usuario {
+    margin-top: 7%;
+
+    margin-bottom: 11%;
+    width: 63%;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 9px;
+}
+
+.contrasenia {
+    margin-top: 7%;  
+    margin-bottom: 11%;  
+    width: 63%;  text-align: center;  font-size: 18px;  border-radius: 9px;
+
+}
+
+.enviar {
+
+    box-shadow: 0px 0px 10px 10px #0087CC inset;
+    background-color: rgb(7, 47, 83);
+    color: white;
+    text-align: center;
+    width: 25%;
+    height: 37px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.logout {
+    box-shadow: 0px 0px 10px 10px #491C13 inset;
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 8%;
+    height: 29px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    z-index: 99;
+    padding-top: 9px;
+    text-decoration: none;
+}
+
+
+.contenedor_tareas {
+
+    float: left;
+
+
+    width: 22%;
+    margin-top: 50px;
+
+
+    height: 350px;
+
+
+    margin-left: 1%;
+
+    padding-right: 0px;
+
+}
+
+.contenedor_tabla {
+    float: left;
+    margin-left: -92px;
+    width: 78%;
+    position: relative;
+}
+
+
+.content {
+    position: relative;
+    width: 1600px;
+    /* height: 1590px; */
+    left: 0%;
+    right: 0%;
+}
+
+
+
+@media (min-width:320px) {
+    .content {
+        width: 100%;
+
+    }
+
+    .contenedor_tareas {
+
+        width: 100px;
+
+
+        margin-top: 115px;
+
+    }
+
+    .contenedor_tabla {
+        width: 80%;
+
+
+        margin-left: 2%;
+    }
+
+     #Calendario {
+
+
+        position: relative;
+    }
+
+}
+#calendario2 {
+
+    display: none;
+
+    position: relative;
+
+
+    margin-top: 20px;
+    text-align: center;
+    border: none;
+
+}
+
+@media (min-width: 760px) {
+
+    .content {
+        width: 100%;
+    }
+    .contenedor_tareas {
+        width: 95px;
+
+        margin-left: 23px;
+
+        margin-top: 115px;
+    }
+
+    .contenedor_tabla {
+        width: 79%;
+
+    }
+}
+
+
+@media (min-width :1016px) {
+    .content {
+        width: 1175px;
+
+        left: 17%;
+    
+        height: auto;
+}
+
+    .contenedor_tareas {
+        width: 100px;  
+        margin-left: 149px;
+
+
+        margin-top: 115px;
+    }
+
+    .contenedor_tabla {
+        width: 873px;
+
+
+    }
+
+
+}
+
+
+
+#siguiente {
+
+    box-shadow: 0px 0px 10px 10px #0087CC inset;
+
+    background-color: rgb(7, 47, 83);
+    color: white;
+    text-align: center;
+    width: 12%;
+    height: 30px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-top: 98px;
+    border-radius: 3px;
+    border: 1px solid rgb(7, 47, 83);
+}
+
+
+
+#anterior {
+    display: none;
+    box-shadow: 0px 0px 10px 10px #0087CC inset;
+
+    background-color: rgb(7, 47, 83);
+    color: white;
+    text-align: center;
+    width: 12%;
+    height: 30px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    margin-top: 98px;
+    border-radius: 3px;
+    border: 1px solid rgb(7, 47, 83);
+}
